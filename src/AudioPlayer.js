@@ -88,7 +88,7 @@ setProgress = listener => {
   this.play();
 };
 
-durationInTime = (sec) =>{
+/*durationInTime = (sec) =>{
     var minutes = Math.floor(sec / 60);
     var seconds  = sec - minutes * 60;
     if(minutes < 10) {
@@ -98,14 +98,14 @@ durationInTime = (sec) =>{
       seconds = '0' + seconds
     }
   return minutes + ':' + seconds.toFixed(0);
-}
+}*/
   
 play = () => {
   this.setState({
     playing: true,
   });
   this.audio.play();
-  document.getElementById('durationOfTrack').innerText = (this.durationInTime(this.audio.duration));
+  //document.getElementById('durationOfTrack').innerText = (this.durationInTime(this.audio.duration));
   this.props.onPlay();
 };
 
@@ -115,7 +115,7 @@ pause = () => {
   });
 
   this.audio.pause();
-  document.getElementById('durationOfTrack').innerText = (this.durationInTime(this.audio.duration));
+  //document.getElementById('durationOfTrack').innerText = (this.durationInTime(this.audio.duration));
   this.props.onPause();
 };
 
@@ -141,7 +141,7 @@ pause = () => {
     });
     
     this.audio.src = active.url;
-    document.getElementById('durationOfTrack').innerText = (this.durationInTime(this.audio.duration));
+    //document.getElementById('durationOfTrack').innerText = (this.durationInTime(this.audio.duration));
     
     this.play();
   
@@ -165,7 +165,7 @@ pause = () => {
   
     this.audio.src = active.url;
   
-    document.getElementById('durationOfTrack').innerText = (this.durationInTime(this.audio.duration));
+    //document.getElementById('durationOfTrack').innerText = (this.durationInTime(this.audio.duration));
     this.play();
   
     this.props.onPrevious();
