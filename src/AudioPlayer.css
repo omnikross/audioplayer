@@ -1,0 +1,161 @@
+/* Player */
+.no-height {
+  height: 0 !important;
+}
+.player-container {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #EAEDEF;
+}
+
+.current-song-player {
+  width: 100%;
+}
+.artist-name,
+.artist-song-name {
+  margin: 0;
+}
+.artist-name {
+  margin-bottom: 5px;
+  font-size: 32px;
+  font-weight: 400;
+}
+.artist-song-name {
+  font-size: 18px;
+  font-weight: 400;
+}
+.player-progress-container {
+  position: relative;
+  min-width: 550px;
+  height: 9px;
+  margin: 0 auto;
+  background-color: #2c3e50;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.player-progress-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #95a5a6;
+  border-radius: 40px;
+}
+.player-progress-value:after {
+  position: absolute;
+  top: -3px;
+  right: -6px;
+  content: '';
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #2980b9;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 5px 2px;
+  cursor: pointer;
+}
+.player-options {
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-between;
+  width: 100%;
+}
+.player-buttons {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.player-buttons.player-controls {
+  width: 100%;
+}
+.player-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #D2D7DB;
+  background-color: transparent;
+  border: 0;
+  border-radius: 50%;
+  outline: 0;
+  transition: all .4s;
+  cursor: pointer;
+}
+.player-btn i {
+  font-size: 25px;
+  margin: 0 auto;
+}
+.player-btn.active {
+  color: #838C92;
+}
+.player-btn.big {
+  width: 35px;
+  height: 35px;
+}
+.player-btn.big i {
+  font-size: 15px;
+}
+.player-btn.medium {
+  width: 25px;
+  height: 25px;
+}
+.player-btn.medium i {
+  font-size: 8px;
+}
+.player-btn.volume {
+  width: 30px;
+  height: 30px;
+}
+.player-btn:disabled {
+  opacity: .5;
+}
+.player-controls {
+  width: 180px;
+}
+.player-controls .player-btn {
+  color: #D9D9D9;
+  background-color: #34495e;
+}
+#durationOfTrack {
+  margin: 0 auto;
+  width: 50px;
+  height: 20px;
+}
+#search {
+  margin-top: 20px;
+  width: 100%;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  border-style: hidden;
+}
+.track-table {
+  width: 100%;
+}
+.table {
+  width: 100%;
+  margin-top: 50px;
+  height: 150px;
+  background: #EAEDEF;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.name,
+.song {
+  padding-left: 10px;
+  width: 200px;
+  border-bottom: 1px solid black;
+  text-align: left;
+}
+.duration {
+  padding-right: 15px;
+  widht: 50px;
+  border-bottom: 1px solid black;
+  text-align: right;
+}
+#founded {
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+  cursor: pointer;
+}
